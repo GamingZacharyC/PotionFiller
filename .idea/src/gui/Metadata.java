@@ -6,6 +6,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.font.TextAttribute;
 //TODO Learn GUIs enough to atually do something useful
+
 public class Metadata implements ActionListener {
 
     // Declare variables early on
@@ -26,16 +27,11 @@ public class Metadata implements ActionListener {
         // Create UI elements
             //startButton
             startButton = new JButton("Start");
-            startButton.setBounds(50, 20, 25, 5);
             startButton.addActionListener(this);
             panel.add(startButton);
 
             // selectSlotsLabel
             selectSlotsLabel = new JLabel("Click Count: "+"No Clicks Yet");
-            selectSlotsLabel.setHorizontalAlignment(3);
-            selectSlotsLabel.setBounds(50, 20, 25, 10);
-            selectSlotsLabel.setAlignmentX(Component.CENTER_ALIGNMENT);
-            selectSlotsLabel.setAlignmentY(Component.CENTER_ALIGNMENT);
             panel.add(selectSlotsLabel);
 
         //
