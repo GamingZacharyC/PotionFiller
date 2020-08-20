@@ -55,7 +55,7 @@ public class InventorySelecter {
     }
 
     @Override
-    public void actionPerformed(ActionEvent e) {
+    private void actionPerformed(ActionEvent e) {
         count++;
         selectSlotsLabel.setText("Click Count: "+ count);
     }
